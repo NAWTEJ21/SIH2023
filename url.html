@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPLAINT PORTAL|REGISTRATION</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/HTML/CSS/style.css">
+    <script type="module" src="check.js"></script>
 </head>
 <body>
     <section id="url">
@@ -15,19 +16,25 @@
            <label for="orgac">Original Account:</label><br>
            <input type="url" name="orgac" id="orgac" 
            placeholder="Original URL(Optional)" required autofocus> <br> <br>
-           <label for="issue">Report Issue For:</label><br>
-           <p class="issues"><pre>
-         DEFAMATION<input type="checkbox" name="issue" id="issue" >
-         HARRASSING<input type="checkbox" name="issue" id="issue">
-         BLACKMAILING <input type="checkbox" name="issue" id="issue">
-         TROLLING<input type="checkbox" name="issue" id="issue">
-         MONETARY FRAUD <input type="checkbox" name="issue" id="issue">
-         HONEY TRAP <input type="checkbox" name="issue" id="issue">
-         MONEY LAUNDERING <input type="checkbox" name="issue" id="issue">
-         CHILD ABUSE <input type="checkbox" name="issue" id="issue">
-         OTHER<input type="checkbox" name="issue" id="issue">Specify:<input type="text" autofocus></pre></p>
-    </form>
-    </section>
+         </form>   
+     </section>
+     <label for="select">ISSUE:
+    <div class="dropdown">
+        <button class="btn-dropdown">Select</button></label>
+        <div class="dropdown-content">
+          <label><input type="checkbox" value="option1">DEFAMATION</label>
+          <label><input type="checkbox" value="option2">HARRASSING</label>
+          <label><input type="checkbox" value="option3">BLACKMAILING</label>
+          <label><input type="checkbox" value="option2">TROLLING</label>
+          <label><input type="checkbox" value="option2">MONEY FRAUD</label>
+          <label><input type="checkbox" value="option2">HONEY TRAP</label>
+          <label><input type="checkbox" value="option2">MONEY LAUNDERING</label>
+          <label><input type="checkbox" value="option2">CHILD ABUSE</label>
+          <label><input type="checkbox" value="option2">OTHER</label>
+          <label>Specify:<input type="text" autofocus></label>
+        </div>
+      </div>
+      <br></BR>
     <section id="fsubmit">
         <button type="submit">Register Your Complaint</button><br><br><br>
         <button type="reset">Reset</button>
